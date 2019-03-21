@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ficha Cadastral</title>
+		<style type="text/css">
+			.titulo{
+				color: darkgrey;
+				text-align: center;
+				font: Arial;
+			}
+
+			.nome{
+				width: 700px;
+				background: lightgrey;
+			}
+
+			.rg{
+				width: 350px;
+				background: lightgrey;
+			
+			}
+
+			.cpf{
+				position: fixed;
+				left: 665px;
+				top: 224px;
+				width: 300px;
+				background: lightgrey;
+			}
+
+			.endereco{
+				width: 700px;
+				background: lightgrey;
+			}
+
+			.genero{
+				width: 350px;
+				background: lightgrey;
+
+			}
+
+			.data{
+				position: fixed;
+				left: 665px;
+				top: 366px;
+				width: 302px;
+				background: lightgrey;
+			}
+
+			.situacao{
+
+			}
+
+			.cadastro{
+				text-align: center;
+				margin: 0 auto;
+				
+			}
+
+			.field{
+				margin:0 auto;
+				width: 750px
+			}
+
+			#sit{
+				margin-bottom: 5px;
+			}
+
+			#cpf1{
+				position: fixed;
+				top: 190px;
+
+			}
+
+			#data1{
+				position: fixed;
+				top: 331px;
+				left: 665px;
+			}	
+
+
+		</style>
+</head>
+<body>
+	<form action="">
+	<h1 class="titulo">Ficha Cadastral</h1>
+		<fieldset class="field"> <legend>Dados Pessoais:</legend>
+		<div>	
+			<p id="nome">Nome:</p>
+			<label for="nome"></label>
+			<input type="text" name="nome" class="nome">
+		</div>
+		<div>
+			<p id="rg1">RG:</p>
+			<label for="RG"></label>
+			<input type="text" name="RG" class="rg">
+		</div>
+		<div class="cpf">
+			<p id="cpf1">CPF:</p>
+			<label for="CPF"></label>
+			<input type="text" name="CPF" class="cpf">
+		</div>	
+		<div>
+			<p id="endereco1">Endereço:</p>
+			<label for="endereco"></label>
+			<input type="text" name="endereco" class="endereco">
+		</div>
+		<div>
+			<p id="genero1">Gênero:</p>
+			<label for="genero">
+				<select class="genero">
+					<option value="feminino">Feminino</option>
+					<option value="masculino">Masculino</option>
+					<option value="outro">Outro</option>
+				</select>
+			</label>
+		</div>
+		<div>
+			<p id="data1">Data de Nascimento:</p>
+			<label for="data"></label>
+			<input type="text" name="data" class="data">
+		</div>
+		<div>
+			<p id="sit">Situação Civil:</p>
+			<label for="solteiro">Solteira(o)</label>
+			<input type="radio" name="solteiro">
+			<label for="casado">Casada(o)</label>
+			<input type="radio" name="casado">
+			<label for="viuvo">Viúva(o)</label>
+			<input type="radio" name="viuvo">
+		</div>
+		<div class="cadastro">
+			<input type="submit" value="Cadastrar">
+		</div>
+		</fieldset>
+
+      </form>
+</body>
+</html>
